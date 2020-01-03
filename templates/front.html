@@ -1,0 +1,21 @@
+<html lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+
+</head>
+<body>
+<h1>Upload</h1>
+
+<form method="post" enctype="multipart/form-data" >
+{{form.as_p}}
+<input type="submit" value="ok"/>
+
+{% if graph %}
+    {% load static %}
+    <img alt="my graph" src="/static/{{graph}}" />
+{% endif %}
+
+</form>
+</body>
+</html>
